@@ -1,19 +1,19 @@
 #include<stdio.h>
 main()
 {
-    int n,i,sum,ia[100],a[100];
-    a[1]=0;
+    int k,i,sum,intarr[100],at[100];
+    at[1]=0;
     printf("Enter the number of customer: ");
-    scanf("%d",&n);
+    scanf("%d",&k);
     printf("Enter the Inter arrival time: ");
-    for(i=1;i<=n;i++){
-        scanf("%d",&ia[i]);
+    for(i=1;i<=k;i++){
+        scanf("%d",&intarr[i]);
     }
-    for(i=2;i<=n;i++){
-        a[i]=ia[i]+a[i-1];
+    for(i=2;i<=k;i++){
+        at[i]=intarr[i]+at[i-1];
     }
-    for(i=1;i<=n;i++){
-        printf("%d ",a[i]);
+    for(i=1;i<=k;i++){
+        printf("%d ",at[i]);
     }
 
 }
