@@ -3,9 +3,9 @@ main()
 {
     int k,i,sum,intarr[100],at[100];
     at[1]=0;
-    printf("Enter the number of customer: ");
+    printf("Enter number of customer: ");
     scanf("%d",&k);
-    printf("Enter the Inter arrival time: ");
+    printf("Enter Inter arrival time: ");
     for(i=1;i<=k;i++){
         scanf("%d",&intarr[i]);
     }
